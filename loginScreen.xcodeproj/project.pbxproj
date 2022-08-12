@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FDA46C0D28A6D66700ED09DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA46C0C28A6D66700ED09DE /* AppDelegate.swift */; };
 		FDA46C0F28A6D66700ED09DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA46C0E28A6D66700ED09DE /* SceneDelegate.swift */; };
-		FDA46C1128A6D66700ED09DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA46C1028A6D66700ED09DE /* ViewController.swift */; };
+		FDA46C1128A6D66700ED09DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA46C1028A6D66700ED09DE /* LoginViewController.swift */; };
 		FDA46C1428A6D66700ED09DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA46C1228A6D66700ED09DE /* Main.storyboard */; };
 		FDA46C1628A6D66B00ED09DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA46C1528A6D66B00ED09DE /* Assets.xcassets */; };
 		FDA46C1928A6D66B00ED09DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA46C1728A6D66B00ED09DE /* LaunchScreen.storyboard */; };
+		FDA46C2128A6E93900ED09DE /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA46C2028A6E93900ED09DE /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDA46C0928A6D66700ED09DE /* loginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA46C0C28A6D66700ED09DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA46C0E28A6D66700ED09DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDA46C1028A6D66700ED09DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDA46C1028A6D66700ED09DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FDA46C1328A6D66700ED09DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDA46C1528A6D66B00ED09DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA46C1828A6D66B00ED09DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDA46C1A28A6D66B00ED09DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA46C2028A6E93900ED09DE /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				FDA46C0C28A6D66700ED09DE /* AppDelegate.swift */,
 				FDA46C0E28A6D66700ED09DE /* SceneDelegate.swift */,
-				FDA46C1028A6D66700ED09DE /* ViewController.swift */,
+				FDA46C1028A6D66700ED09DE /* LoginViewController.swift */,
+				FDA46C2028A6E93900ED09DE /* WelcomeViewController.swift */,
 				FDA46C1228A6D66700ED09DE /* Main.storyboard */,
 				FDA46C1528A6D66B00ED09DE /* Assets.xcassets */,
 				FDA46C1728A6D66B00ED09DE /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA46C1128A6D66700ED09DE /* ViewController.swift in Sources */,
+				FDA46C1128A6D66700ED09DE /* LoginViewController.swift in Sources */,
+				FDA46C2128A6E93900ED09DE /* WelcomeViewController.swift in Sources */,
 				FDA46C0D28A6D66700ED09DE /* AppDelegate.swift in Sources */,
 				FDA46C0F28A6D66700ED09DE /* SceneDelegate.swift in Sources */,
 			);
@@ -304,7 +308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
