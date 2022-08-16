@@ -13,8 +13,8 @@ final class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     // MARK: - Private Properties
-    private let userName = "Ilay"
-    private let userPassword = "123456"
+    private let userName = "1"
+    private let userPassword = "1"
     
     // MARK: - Public methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
