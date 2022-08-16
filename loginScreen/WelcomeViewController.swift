@@ -12,7 +12,7 @@ final class WelcomeViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet var welcomeLable: UILabel!
     
-    // MARK: - Private Properties
+    // MARK: - Public Properties
     var welcomePerson = ""
     
     override func viewDidLoad() {

@@ -17,10 +17,6 @@ final class LoginViewController: UIViewController {
     private let userPassword = "123456"
     
     // MARK: - Public methods
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let welcomeVC = segue.destination as? WelcomeViewController {
             welcomeVC.welcomePerson = userName
@@ -45,7 +41,6 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
-        guard let _ = segue.source as? WelcomeViewController else {return}
         nameTextField.text = ""
         passwordTextField.text = ""
     }
@@ -70,10 +65,7 @@ extension LoginViewController {
     //Убираем клавиатуру по тапу на экран
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        let pressInScreen: UITapGestureRecognizer = UITapGestureRecognizer(
-            target: self,
-            action: #selector(self.dismissKeyboard))
-        pressInScreen.cancelsTouchesInView = false
-        view.addGestureRecognizer(pressInScreen)
+        view.endEditing(true)
     }
 }
+
