@@ -114,7 +114,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Log out"/>
                                 <connections>
                                     <action selector="logOutButton:" destination="L2x-5i-e63" eventType="touchUpInside" id="LUk-fI-xyL"/>
-                                    <segue destination="n8f-Rq-R41" kind="unwind" unwindAction="unwindSegue:" id="Mfb-mF-R0T"/>
+                                    <segue destination="n8f-Rq-R41" kind="unwind" unwindAction="unwindSegue:" id="FGN-3n-jE8"/>
                                 </connections>
                             </button>
                         </subviews>

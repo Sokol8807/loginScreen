@@ -37,6 +37,7 @@ final class LoginViewController: UIViewController {
             || passwordTextField.text != userPassword {
             showAlert(title: "Incorrect name or password",
                       message: "Please use help")
+            passwordTextField.text = ""
         }
     }
     

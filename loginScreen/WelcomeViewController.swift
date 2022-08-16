@@ -23,6 +23,5 @@ final class WelcomeViewController: UIViewController {
     
     // MARK: - IBAction
     @IBAction func logOutButton(_ sender: UIButton) {
-        dismiss(animated: true)
     }
 }
