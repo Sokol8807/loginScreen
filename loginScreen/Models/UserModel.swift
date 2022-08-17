@@ -14,7 +14,7 @@ struct User {
     let privateInformation: Person
     
     static func getUser() -> User {
-        User(userName: "2", userPassword: "2", privateInformation: getPerson() )
+        User(userName: "Sokol", userPassword: "1", privateInformation: getPerson() )
     }
 }
 
@@ -29,5 +29,5 @@ struct Person {
 
 
 func getPerson() -> Person {
-    Person(name: "Ilay", surname: "Sokolov", age: 33, hobbis: "iOs Develope", image: UIImage(named: "sokolov")!)
+    Person(name: "Ilay", surname: "Sokolov", age: 33, hobbis: "iOs Developing , landscape photography, snowboarding ", image: UIImage(named: "sokolov")!)
 }
