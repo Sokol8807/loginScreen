@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FD73C35228AC3995000C46B7 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73C35128AC3995000C46B7 /* UserViewController.swift */; };
 		FD73C35528AC3DEC000C46B7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73C35428AC3DEC000C46B7 /* DetailViewController.swift */; };
+		FD73C35728AC9C7F000C46B7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73C35628AC9C7F000C46B7 /* UserModel.swift */; };
 		FDA46C0D28A6D66700ED09DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA46C0C28A6D66700ED09DE /* AppDelegate.swift */; };
 		FDA46C0F28A6D66700ED09DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA46C0E28A6D66700ED09DE /* SceneDelegate.swift */; };
 		FDA46C1128A6D66700ED09DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA46C1028A6D66700ED09DE /* LoginViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		FD73C35128AC3995000C46B7 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		FD73C35428AC3DEC000C46B7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FD73C35628AC9C7F000C46B7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FDA46C0928A6D66700ED09DE /* loginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA46C0C28A6D66700ED09DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA46C0E28A6D66700ED09DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,32 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		FD73C35828AC9C88000C46B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD73C35628AC9C7F000C46B7 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD73C35928ACA835000C46B7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FDA46C1728A6D66B00ED09DE /* LaunchScreen.storyboard */,
+				FDA46C1228A6D66700ED09DE /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FD73C35A28ACA869000C46B7 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				FDA46C0C28A6D66700ED09DE /* AppDelegate.swift */,
+				FDA46C0E28A6D66700ED09DE /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
 		FDA46C0028A6D66700ED09DE = {
 			isa = PBXGroup;
 			children = (
@@ -73,12 +101,11 @@
 		FDA46C0B28A6D66700ED09DE /* loginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				FDA46C0C28A6D66700ED09DE /* AppDelegate.swift */,
-				FDA46C0E28A6D66700ED09DE /* SceneDelegate.swift */,
+				FD73C35828AC9C88000C46B7 /* Models */,
 				FD73C35328AC3AB7000C46B7 /* ViewControllers */,
-				FDA46C1228A6D66700ED09DE /* Main.storyboard */,
+				FD73C35928ACA835000C46B7 /* Storyboards */,
+				FD73C35A28ACA869000C46B7 /* Supports */,
 				FDA46C1528A6D66B00ED09DE /* Assets.xcassets */,
-				FDA46C1728A6D66B00ED09DE /* LaunchScreen.storyboard */,
 				FDA46C1A28A6D66B00ED09DE /* Info.plist */,
 			);
 			path = loginScreen;
@@ -156,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA46C1128A6D66700ED09DE /* LoginViewController.swift in Sources */,
+				FD73C35728AC9C7F000C46B7 /* UserModel.swift in Sources */,
 				FD73C35228AC3995000C46B7 /* UserViewController.swift in Sources */,
 				FDA46C2128A6E93900ED09DE /* WelcomeViewController.swift in Sources */,
 				FD73C35528AC3DEC000C46B7 /* DetailViewController.swift in Sources */,
