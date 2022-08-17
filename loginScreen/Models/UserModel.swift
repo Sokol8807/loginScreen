@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct User {
     let userName: String
@@ -22,10 +23,11 @@ struct Person {
     let surname: String
     let age: Int
     let hobbis: String
+    let image:  UIImage
 
 }
 
 
 func getPerson() -> Person {
-    Person(name: "Ilay", surname: "Sokolov", age: 33, hobbis: "iOs Develope")
+    Person(name: "Ilay", surname: "Sokolov", age: 33, hobbis: "iOs Develope", image: UIImage(named: "sokolov")!)
 }

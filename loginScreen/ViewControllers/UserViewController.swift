@@ -12,10 +12,11 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
+        navigationItem.title = User.getUser().userName
     }
     
 
-    @IBAction func unwindSegue2(_ segue: UIStoryboardSegue) {
+    @IBAction func unwindSegueUserVC(_ segue: UIStoryboardSegue) {
     
     }
 

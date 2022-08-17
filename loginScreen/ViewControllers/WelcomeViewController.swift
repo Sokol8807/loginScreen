@@ -21,6 +21,9 @@ final class WelcomeViewController: UIViewController {
         welcomeLable.text = "Welcome, \(welcomePerson)"
     }
     
+    
+
+    
     // MARK: - IBAction
     @IBAction func logOutButton(_ sender: UIButton) {
     }

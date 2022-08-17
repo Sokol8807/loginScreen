@@ -25,14 +25,7 @@ final class LoginViewController: UIViewController {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.welcomePerson = userName
             }
-            else if let _ = viewController as? UINavigationController {
-                if let userVC = viewController as? WelcomeViewController {
-                    userVC.view.backgroundColor = .brown
-                }
-        
-            }
         }
-
     }
     
     // MARK: - IBAction
