@@ -14,10 +14,4 @@ class UserViewController: UIViewController {
         view.backgroundColor = .yellow
         navigationItem.title = User.getUser().userName
     }
-    
-
-    @IBAction func unwindSegueUserVC(_ segue: UIStoryboardSegue) {
-    
-    }
-
 }

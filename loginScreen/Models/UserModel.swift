@@ -24,9 +24,8 @@ struct Person {
     let age: Int
     let hobbis: String
     let image:  UIImage
-
+    
 }
-
 
 func getPerson() -> Person {
     Person(name: "Ilay", surname: "Sokolov", age: 33, hobbis: "iOs Developing , landscape photography, snowboarding ", image: UIImage(named: "sokolov")!)

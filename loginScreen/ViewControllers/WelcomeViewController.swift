@@ -17,12 +17,8 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         welcomeLable.text = "Welcome, \(welcomePerson)"
     }
-    
-    
-
     
     // MARK: - IBAction
     @IBAction func logOutButton(_ sender: UIButton) {

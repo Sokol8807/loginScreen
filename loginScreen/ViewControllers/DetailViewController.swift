@@ -8,7 +8,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
     @IBOutlet weak var avatarImageView: UIImageView!
     
     @IBOutlet weak var nameLable: UILabel!
@@ -20,20 +20,14 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupInformation()
-        
     }
     
     func setupInformation() {
-        
         nameLable.text = User.getUser().privateInformation.name
         sureNameLable.text = User.getUser().privateInformation.surname
         hobbyTextView.text = User.getUser().privateInformation.hobbis
         ageLable.text = String(User.getUser().privateInformation.age)
-        
         avatarImageView.image = User.getUser().privateInformation.image
         
-        
     }
-    
-    
 }
