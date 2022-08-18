@@ -23,10 +23,10 @@ class DetailViewController: UIViewController {
     }
     
     func setupInformation() {
-        nameLable.text = User.getUser().privateInformation.name
-        sureNameLable.text = User.getUser().privateInformation.surname
-        hobbyTextView.text = User.getUser().privateInformation.hobbis
-        ageLable.text = String(User.getUser().privateInformation.age)
+        nameLable.text = "My name is \(User.getUser().privateInformation.name)"
+        sureNameLable.text = "My surname is \(User.getUser().privateInformation.surname) "
+        hobbyTextView.text = "I like \(User.getUser().privateInformation.hobbis)"
+        ageLable.text = "I am \(String(User.getUser().privateInformation.age)) years old"
         avatarImageView.image = User.getUser().privateInformation.image
         
     }
