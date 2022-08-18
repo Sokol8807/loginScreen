@@ -7,8 +7,8 @@
 
 import UIKit
 
-class UserViewController: UIViewController {
-
+final class UserViewController: UIViewController {
+    // MARK: - Visual Components
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow

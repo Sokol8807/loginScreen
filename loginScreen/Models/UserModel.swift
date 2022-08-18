@@ -8,13 +8,16 @@
 import Foundation
 import UIKit
 
+// MARK: - Initializers
 struct User {
     let userName: String
     let userPassword: String
     let privateInformation: Person
     
     static func getUser() -> User {
-        User(userName: "Sokol", userPassword: "1", privateInformation: getPerson() )
+        User(userName: "Sokol",
+             userPassword: "1",
+             privateInformation: getPerson())
     }
 }
 
@@ -24,9 +27,11 @@ struct Person {
     let age: Int
     let hobbis: String
     let image:  UIImage
-    
 }
 
+// MARK: - Public methods
 func getPerson() -> Person {
-    Person(name: "Ilay", surname: "Sokolov", age: 33, hobbis: "iOs Developing , landscape photography, snowboarding ", image: UIImage(named: "sokolov")!)
+    Person(name: "Ilay", surname: "Sokolov", age: 33,
+           hobbis: "iOs Developing , landscape photography, snowboarding ",
+           image: UIImage(named: "sokolov")!)
 }

@@ -7,8 +7,8 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-    
+final class DetailViewController: UIViewController {
+    // MARK: - IBOutlet
     @IBOutlet weak var avatarImageView: UIImageView!
     
     @IBOutlet weak var nameLable: UILabel!
@@ -16,13 +16,13 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var ageLable: UILabel!
     
     @IBOutlet weak var hobbyTextView: UITextView!
-    
+    // MARK: - Visual Components
     override func viewDidLoad() {
         super.viewDidLoad()
         setupInformation()
     }
-    
-    func setupInformation() {
+    // MARK: - Private Methods
+   private func setupInformation() {
         nameLable.text = "My name is \(User.getUser().privateInformation.name)"
         sureNameLable.text = "My surname is \(User.getUser().privateInformation.surname) "
         hobbyTextView.text = "I like \(User.getUser().privateInformation.hobbis)"
